@@ -1,0 +1,47 @@
+/*
+============================================================================
+ Name		: testapp.rls
+ Author	  : wuyulun
+ Copyright   : Your copyright notice
+ Description : This is a localisation file for testapp
+				A .rls file is the one and only place where the logical
+				strings to be localised are defined. 
+============================================================================
+*/
+CHARACTER_SET UTF8
+
+//  LOCALISATION STRINGS
+
+// Caption string for app.
+#define qtn_caption_string "NBK"
+
+#define qtn_home "打开主页"
+#define qtn_test_async "异步载入测试(test2)"
+#define qtn_test_sync "同步载入测试(test3)"
+#define qtn_switch "直连 / 云全排"
+#define qtn_switchCute "直连 / 云简排"
+#define qtn_switchUck "直连 / UCK简排"
+#define qtn_stop "停止"
+#define qtn_refresh "刷新"
+#define qtn_forward "前进"
+#define qtn_set_image "图像 on/off"
+#define qtn_set_inc "增量模式 on/off"
+#define qtn_clear_fscache "清除缓存文件"
+#define qtn_night_scheme "白天 / 夜晚"
+#define qtn_monkey "Monkey start/stop"
+#define qtn_layout_mode "排版模式切换"
+#define qtn_remember_uri "记录网站地址"
+
+#define qtn_help "帮助"
+#define qtn_about "关于"
+#define qtn_exit "退出"
+
+#define qtn_command1_text "Hello World!"
+
+#define qtn_loc_resource_file_1 "\\resource\\apps\\nbk_app"
+
+#define qtn_about_dialog_title "About"
+
+#define qtn_about_dialog_text "NBK Version 1.0.0\n\nAuthor: wuyulun\n\nSupport: wuyulun@baidu.com\n\n(c) Baidu MIC"
+
+// End of File

@@ -1,0 +1,96 @@
+// sources of stdc
+
+SOURCEPATH ../../../stdc/tools
+
+SOURCE	smartPtr.c
+SOURCE	str.c
+SOURCE	callback.c
+SOURCE	gdi.c
+SOURCE	strPool.c
+SOURCE	strDict.c
+SOURCE	strBuf.c
+SOURCE	strList.c
+SOURCE	slist.c
+SOURCE	dlist.c
+SOURCE	timer.c
+SOURCE	dump.c
+SOURCE	ptrArray.c
+SOURCE	unicode.c
+SOURCE	memAlloc.c
+SOURCE	hashMap.c
+
+SOURCEPATH ../../../stdc/css
+
+SOURCE	color.c
+SOURCE	css_prop.c
+SOURCE	css_value.c
+SOURCE	css_helper.c
+SOURCE	cssSelector.c
+SOURCE	cssMgr.c
+
+SOURCEPATH ../../../stdc/dom
+
+SOURCE	xml_atts.c
+SOURCE	xml_tags.c
+SOURCE	xml_helper.c
+SOURCE	char_ref.c
+SOURCE	attr.c
+SOURCE	node.c
+SOURCE	xml_tokenizer.c
+SOURCE	document.c
+SOURCE	page.c
+SOURCE	view.c
+SOURCE	miParser.c
+SOURCE	xpath.c
+SOURCE	event.c
+SOURCE	history.c
+SOURCE	wbxmlDec.c
+
+SOURCEPATH ../../../stdc/render
+
+SOURCE	imagePlayer.c
+SOURCE	renderNode.c
+SOURCE	renderBlock.c
+SOURCE	renderText.c
+SOURCE	renderImage.c
+SOURCE	renderBr.c
+SOURCE	renderInput.c
+SOURCE	renderHr.c
+SOURCE	renderSelect.c
+SOURCE	renderTextarea.c
+SOURCE	renderObject.c
+SOURCE	renderBlank.c
+SOURCE	renderA.c
+SOURCE	renderTable.c
+SOURCE	renderTr.c
+SOURCE	renderTd.c
+SOURCE	renderInline.c
+SOURCE	renderInlineBlock.c
+SOURCE	renderTextPiece.c
+SOURCE	layoutStat.c
+
+SOURCEPATH ../../../stdc/loader
+
+SOURCE	loader.c
+SOURCE	url.c
+SOURCE	ngzip.c
+SOURCE	upCmd.c
+SOURCE	cacheMgr.c
+SOURCE	cookieMgr.c
+
+SOURCEPATH ../../../stdc/editor
+
+SOURCE	editBox.c
+SOURCE	textEditor.c
+SOURCE	textSel.c
+SOURCE	formData.c
+
+SOURCEPATH ../../../stdc/wbxml
+
+SOURCE	wbxml_base64.c
+SOURCE	wbxml_buffers.c
+SOURCE	wbxml_charset.c
+SOURCE	wbxml_elt.c
+SOURCE	wbxml_mem.c
+SOURCE	wbxml_parser.c
+SOURCE	wbxml_tables.c

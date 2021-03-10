@@ -1,0 +1,103 @@
+/*
+============================================================================
+ Name		: NBrKernel.mmp
+ Author	  : wuyulun
+ Copyright   : 2010,2011 (C) MIC
+ Description : This is the project specification file for NBrKernel.
+============================================================================
+*/
+
+TARGET		  nbk_core.dll
+TARGETTYPE	  DLL
+EPOCALLOWDLLDATA
+UID 0x1000008d 0x2003681D
+
+CAPABILITY LocalServices Location NetworkServices ReadDeviceData ReadUserData UserEnvironment WriteDeviceData WriteUserData SwEvent
+
+OPTION CW -frame on
+
+MACRO USE_MM32
+#define USE_MM32
+//MACRO __NBK_SELF_TESTING__
+
+SYSTEMINCLUDE	.
+SYSTEMINCLUDE   /epoc32/include
+SYSTEMINCLUDE	/epoc32/include/libc
+SYSTEMINCLUDE	/epoc32/include/http
+//APP_LAYER_SYSTEMINCLUDE_SYMBIAN // for symbain ^3
+//SYSTEMINCLUDE	/epoc32/include/mw/http
+
+USERINCLUDE	 ../inc
+
+#include "nbk_inc.mmpi" // COMMENT THIS LINE WHEN IMPORT TO CARBIDE
+
+// In order to use .def files to freeze code you must use one or more DEFFILE lines;
+// see the ones commented out below for examples.
+// By default, the build tools look for the WINSCW def file in a BWINS directory
+// (at the same level as the directory containing the mmp file), 
+// the GCC ARM def file in a BMARM directory, and the ARMV5 def file in a EABI directory. 
+// If your .def files are stored in these default locations, you can simply specify the
+// .def filename(s) with no path. If you want to store .def files in non-default 
+// locations, you will need to specify the paths in the DEFFILE statement(s).
+
+//The following commented out code shows how the build system uses the implicit
+// location for defiles. To create the DEF files Choose Project > Freeze Exports from Carbide
+// or run 'abld freeze' from the command-line
+//#if defined (WINS)
+//  DEFFILE ..\bwins\NBrKernel.def
+//#elif defined (GCC32)
+//  DEFFILE ..\bmarm\NBrKernel.def
+//#else 
+//  DEFFILE ..\eabi\NBrKernel.def
+//#endif
+
+nostrictdef
+
+START BITMAP nbk_core.mbm
+	TARGETPATH /resource/apps
+	HEADER
+	SOURCEPATH ../data
+	SOURCE 4	ArrowCursor.bmp
+	SOURCE 1	ArrowCursorMask.bmp
+	SOURCE c24	ad.bmp ad_dark.bmp flash.bmp flash_dark.bmp
+	SOURCE 1	mask.bmp
+	SOURCE c24	sel_i_d.bmp sel_i_u.bmp sel_i_d_night.bmp sel_i_u_night.bmp
+	SOURCE c24	sel_i_d_mask.bmp sel_i_u_mask.bmp
+END
+
+
+LIBRARY	estlib.lib euser.lib fbscli.lib bitgdi.lib gdi.lib cone.lib charconv.lib
+LIBRARY	eikcore.lib efsrv.lib imageconversion.lib esock.lib commdb.lib
+LIBRARY	http.lib inetprotutil.lib bafl.lib estor.lib ecom.lib ezlib.lib hal.lib
+LIBRARY	fepbase.lib eikcoctl.lib form.lib eikctl.lib avkon.lib etel3rdparty.lib
+LIBRARY hash.lib etext.lib
+
+#ifdef USE_MM32
+LIBRARY nbk_mem.lib
+#endif
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+EXPORTUNFROZEN
+
+#include "nbk_src.mmpi" // COMMENT THIS LINE WHEN IMPORT TO CARBIDE
+
+SOURCEPATH ../src
+
+#ifdef __NBK_SELF_TESTING__
+SOURCE	Monkey.cpp
+#endif
+
+SOURCE	NBrKernel.cpp
+SOURCE	NBrKernelDllMain.cpp
+SOURCE	Probe.cpp
+SOURCE	nbk_mem.cpp nbk_str.cpp nbk_ctlPainter.cpp
+SOURCE	NbkGdi.cpp nbk_gdi.cpp
+SOURCE	ResourceManager.cpp FileConn.cpp HttpConn.cpp SimRequest.cpp
+SOURCE	TimerManager.cpp
+SOURCE	ImageImpl.cpp ImageManager.cpp
+SOURCE	FEPHandler.cpp
+SOURCE	BufFileWriter.cpp
+SOURCE	DecodeThread.cpp

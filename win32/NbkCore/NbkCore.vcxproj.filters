@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="stdc">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="stdc\inc">
+      <UniqueIdentifier>{2c04edca-43f0-49f8-9b43-493695e9e07f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\tools">
+      <UniqueIdentifier>{00e3af9c-346d-431a-a66d-35752df5528f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{dd96eba5-b2e4-40f0-9680-eb20f3955098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\css">
+      <UniqueIdentifier>{f32dc364-0c09-449d-8d5a-73e025c5cf79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\dom">
+      <UniqueIdentifier>{3c5d3f9b-2f09-4f89-974e-07d453a1a989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\editor">
+      <UniqueIdentifier>{db0b7557-ae24-4555-83ea-3acc844d4230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\loader">
+      <UniqueIdentifier>{642c466d-fe8a-49a3-8706-fd0d4bfe7c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\render">
+      <UniqueIdentifier>{59e3c7ac-03ea-4778-82ba-a9fc9e9b0a86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\wbxml">
+      <UniqueIdentifier>{8b7a6c66-36aa-4b60-a3c8-06d2812ad3c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\cpconv">
+      <UniqueIdentifier>{28d6be4c-87ba-482f-a9fe-6b697861d7ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\stdc\inc\config.h">
+      <Filter>stdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\slist.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\inc\nbk_timer.h">
+      <Filter>stdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\str.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\inc\nbk_callback.h">
+      <Filter>stdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\inc\nbk_cbDef.h">
+      <Filter>stdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\inc\nbk_ctlPainter.h">
+      <Filter>stdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\inc\nbk_gdi.h">
+      <Filter>stdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\inc\nbk_limit.h">
+      <Filter>stdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\inc\nbk_public.h">
+      <Filter>stdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\inc\nbk_settings.h">
+      <Filter>stdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\inc\nbk_version.h">
+      <Filter>stdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\dlist.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\dump.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\hashMap.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\memAlloc.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\probe.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\ptrArray.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\strBuf.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\strDict.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\strList.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\strPool.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\tree.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\unicode.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\css\color.h">
+      <Filter>stdc\css</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\css\css_helper.h">
+      <Filter>stdc\css</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\css\css_prop.h">
+      <Filter>stdc\css</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\css\css_val.h">
+      <Filter>stdc\css</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\css\css_value.h">
+      <Filter>stdc\css</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\css\cssSelector.h">
+      <Filter>stdc\css</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\attr.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\char_ref.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\document.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\event.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\history.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\miParser.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\node.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\page.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\token.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\view.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\wbxmlDec.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\xml_atts.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\xml_helper.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\xml_tags.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\xml_tokenizer.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\xpath.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\editor\editBox.h">
+      <Filter>stdc\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\editor\textEditor.h">
+      <Filter>stdc\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\editor\textSel.h">
+      <Filter>stdc\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\loader\loader.h">
+      <Filter>stdc\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\loader\url.h">
+      <Filter>stdc\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\imagePlayer.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\layoutStat.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderA.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderBlank.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderBlock.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderBr.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderHr.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderImage.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderInline.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderInlineBlock.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderInput.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderNode.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderObject.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderSelect.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderTable.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderTd.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderText.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderTextarea.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderTextPiece.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderTr.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_base64.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_buffers.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_charset.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_config.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_conv.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_defines.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_elt.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_errors.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_handlers.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_internals.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_mem.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_parser.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\wbxml\wbxml_tables.h">
+      <Filter>stdc\wbxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\loader\upCmd.h">
+      <Filter>stdc\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\editor\formData.h">
+      <Filter>stdc\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="nbk_mem.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\smartPtr.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\loader\ngzip.h">
+      <Filter>stdc\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\css\cssMgr.h">
+      <Filter>stdc\css</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\loader\cookiemgr.h">
+      <Filter>stdc\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\loader\cachemgr.h">
+      <Filter>stdc\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\loader\md5.h">
+      <Filter>stdc\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\loader\md5_loc.h">
+      <Filter>stdc\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\memMgr.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\render\renderInc.h">
+      <Filter>stdc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\inc\nbk_glue.h">
+      <Filter>stdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\cpconv\conv.h">
+      <Filter>stdc\cpconv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\cpconv\uf_gbk.h">
+      <Filter>stdc\cpconv</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\stdc\tools\slist.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="nbk_mem.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\str.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\callback.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\dlist.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\dump.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\gdi.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\hashMap.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\memAlloc.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\probe.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\ptrArray.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\strBuf.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\strDict.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\strList.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\strPool.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\timer.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\tree.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\unicode.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\css\color.c">
+      <Filter>stdc\css</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\css\css_helper.c">
+      <Filter>stdc\css</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\css\css_prop.c">
+      <Filter>stdc\css</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\css\css_value.c">
+      <Filter>stdc\css</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\css\cssSelector.c">
+      <Filter>stdc\css</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\attr.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\char_ref.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\document.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\event.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\history.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\miParser.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\node.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\page.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\view.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\wbxmlDec.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\xml_atts.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\xml_helper.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\xml_tags.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\xml_tokenizer.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\xpath.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\editor\editBox.c">
+      <Filter>stdc\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\editor\textEditor.c">
+      <Filter>stdc\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\editor\textSel.c">
+      <Filter>stdc\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\loader\loader.c">
+      <Filter>stdc\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\loader\url.c">
+      <Filter>stdc\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\imagePlayer.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\layoutStat.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderA.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderBlank.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderBlock.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderBr.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderHr.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderImage.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderInline.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderInlineBlock.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderInput.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderNode.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderObject.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderSelect.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderTable.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderTd.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderText.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderTextarea.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderTextPiece.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\render\renderTr.c">
+      <Filter>stdc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\wbxml\wbxml_base64.c">
+      <Filter>stdc\wbxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\wbxml\wbxml_buffers.c">
+      <Filter>stdc\wbxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\wbxml\wbxml_charset.c">
+      <Filter>stdc\wbxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\wbxml\wbxml_elt.c">
+      <Filter>stdc\wbxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\wbxml\wbxml_mem.c">
+      <Filter>stdc\wbxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\wbxml\wbxml_parser.c">
+      <Filter>stdc\wbxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\wbxml\wbxml_tables.c">
+      <Filter>stdc\wbxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\loader\upCmd.c">
+      <Filter>stdc\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\editor\formData.c">
+      <Filter>stdc\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\smartPtr.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\loader\ngzip.c">
+      <Filter>stdc\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\css\cssMgr.c">
+      <Filter>stdc\css</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\loader\cookiemgr.c">
+      <Filter>stdc\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\loader\cachemgr.c">
+      <Filter>stdc\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\loader\md5.c">
+      <Filter>stdc\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\memMgr.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\gdiText.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\cpconv\conv.c">
+      <Filter>stdc\cpconv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\cpconv\uf_gbk.c">
+      <Filter>stdc\cpconv</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

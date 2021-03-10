@@ -1,0 +1,18 @@
+/*
+============================================================================
+ Name			: bld.inf
+ Author	  		: CoCoMo
+ Copyright   	: Dayhand Network Co Ltd.
+ Description 	: This file provides the information required for building the
+				  whole of a DXBrowser2.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+PRJ_MMPFILES
+
+DXBMem_App_3rd.mmp
+
+PRJ_EXPORTS
+../source/inc/DXMemoryManager.h

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{c90ecf05-7d86-4dd6-87b3-6deaaa8ab6f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JS">
+      <UniqueIdentifier>{30005292-c565-4266-921a-5c3416c06bff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JS\Code">
+      <UniqueIdentifier>{d99071fd-a8d2-4bd3-9386-5a8ca01368ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc">
+      <UniqueIdentifier>{b5190e6c-0b77-4b4a-b916-8310d51f9e30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\tools">
+      <UniqueIdentifier>{d3ef75ee-4753-4ea4-a489-8ee80ea37b93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\loader">
+      <UniqueIdentifier>{b3e1e1d5-c55e-46ab-9c09-f43dd5de83ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\dom">
+      <UniqueIdentifier>{a177b5a1-df8f-4def-b8e8-7b05644145a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdc\cpconv">
+      <UniqueIdentifier>{5047e3cb-4c5a-4cb1-b0b0-2011bcb23ab5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="jscmd.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\js\code\codeAdd.c">
+      <Filter>JS\Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\js\code\codeAssign.c">
+      <Filter>JS\Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\js\code\codeNode.c">
+      <Filter>JS\Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\js\code\codeVar.c">
+      <Filter>JS\Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\js\js_keywords.c">
+      <Filter>JS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\js\parser.c">
+      <Filter>JS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\js\scanner.c">
+      <Filter>JS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\js\script.c">
+      <Filter>JS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\js\symStack.c">
+      <Filter>JS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\js\symTab.c">
+      <Filter>JS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\hashMap.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\str.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\strPool.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\loader\md5.c">
+      <Filter>stdc\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\slist.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\dump.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\char_ref.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\xml_helper.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\xml_atts.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\dom\xml_tags.c">
+      <Filter>stdc\dom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\strList.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\callback.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\gdi.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\tools\unicode.c">
+      <Filter>stdc\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\cpconv\uf_gbk.c">
+      <Filter>stdc\cpconv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdc\cpconv\conv.c">
+      <Filter>stdc\cpconv</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\code\codeAdd.h">
+      <Filter>JS\Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\code\codeAssign.h">
+      <Filter>JS\Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\code\codeNode.h">
+      <Filter>JS\Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\code\codeVar.h">
+      <Filter>JS\Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\code.h">
+      <Filter>JS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\js_keywords.h">
+      <Filter>JS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\jsconf.h">
+      <Filter>JS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\message.h">
+      <Filter>JS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\parser.h">
+      <Filter>JS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\scanner.h">
+      <Filter>JS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\script.h">
+      <Filter>JS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\symStack.h">
+      <Filter>JS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\symTab.h">
+      <Filter>JS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\token.h">
+      <Filter>JS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\js\value.h">
+      <Filter>JS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\hashMap.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\str.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\strPool.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\loader\md5.h">
+      <Filter>stdc\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\loader\md5_loc.h">
+      <Filter>stdc\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\slist.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\dump.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\char_ref.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\xml_helper.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\xml_atts.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\dom\xml_tags.h">
+      <Filter>stdc\dom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\strList.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\tools\unicode.h">
+      <Filter>stdc\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\cpconv\uf_gbk.h">
+      <Filter>stdc\cpconv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdc\cpconv\conv.h">
+      <Filter>stdc\cpconv</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : wuyulun
+ Copyright   : 2010,2011 (C) MIC
+ Description : This file provides the information required for building the
+				whole of a NBrKernel.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+..\inc\NBKPlatformData.h
+..\inc\NBrKernel.h
+
+PRJ_MMPFILES
+NBrKernel.mmp

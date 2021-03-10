@@ -1,0 +1,34 @@
+/*
+============================================================================
+ Name        : DXBNet_A000BC92.mmp
+ Author      : CoCoMo
+ Version     :
+ Copyright   : Dayhand Copyright
+ Description : This is the project specification file for DXBNet_A000BC92.
+============================================================================
+*/
+
+TARGET                                  DXBMem_200316D3.dll 
+TARGETTYPE                              dll 
+UID 0x1000008d 0x200316D3
+
+LIBRARY                                 InetProtUtil.lib 
+LIBRARY                                 http.lib 
+LIBRARY                                 ecom.lib 
+LIBRARY                                 commdb.lib 
+LIBRARY                                 efsrv.lib 
+LIBRARY                                 esock.lib 
+LIBRARY                                 bafl.lib 
+LIBRARY                                 estor.lib 
+LIBRARY                                 euser.lib cone.lib
+EXPORTUNFROZEN
+
+SYSTEMINCLUDE                           \epoc32\include\http
+SYSTEMINCLUDE                           \epoc32\include\ecom 
+SYSTEMINCLUDE                           \epoc32\include 
+USERINCLUDE 							..\source\inc
+
+SOURCEPATH 								..\source\src
+SOURCE NetEngine.cpp NetEngineDllMain.cpp TimeOutTimer.cpp NetFilter.cpp
+
+MACRO __DXBNET_DLL__

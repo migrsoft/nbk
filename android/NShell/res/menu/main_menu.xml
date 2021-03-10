@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/open" android:title="@string/open"></item>
+    <item android:id="@+id/go_forward" android:title="@string/go_forward"></item>
+    <item android:id="@+id/night_mode" android:title="@string/night_mode"></item>
+    <item android:id="@+id/quit" android:title="@string/quit"></item>
+</menu>

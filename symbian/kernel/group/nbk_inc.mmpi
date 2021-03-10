@@ -1,0 +1,9 @@
+// path to nbk_stdc
+
+USERINCLUDE ../../../stdc/inc
+USERINCLUDE ../../../stdc/dom
+USERINCLUDE ../../../stdc/render
+USERINCLUDE ../../../stdc/tools
+USERINCLUDE ../../../stdc/loader
+USERINCLUDE ../../../stdc/editor
+USERINCLUDE ../../../stdc/wbxml

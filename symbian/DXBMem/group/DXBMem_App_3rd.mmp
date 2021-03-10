@@ -1,0 +1,28 @@
+/*
+============================================================================
+ Name        : DXBNet_A000BC92.mmp
+ Author      : CoCoMo
+ Version     :
+ Copyright   : Dayhand Copyright
+ Description : This is the project specification file for DXBNet_A000BC92.
+============================================================================
+*/
+
+TARGET							nbk_mem.dll
+TARGETTYPE	  					dll
+UID 0x1000008d 0x20041419
+CAPABILITY LocalServices Location NetworkServices ReadDeviceData ReadUserData UserEnvironment WriteDeviceData WriteUserData SwEvent
+
+LIBRARY		 					euser.lib InetProtUtil.lib http.lib ecom.lib commdb.lib efsrv.lib esock.lib bafl.lib estor.lib cone.lib estlib.lib hal.lib
+EPOCALLOWDLLDATA
+NOSTRICTDEF                              
+EXPORTUNFROZEN   
+
+SYSTEMINCLUDE   				\epoc32\include \epoc32\include\libc
+APP_LAYER_SYSTEMINCLUDE_SYMBIAN
+USERINCLUDE 					..\source\inc
+
+SOURCEPATH ..\source\src
+SOURCE DXAllocator.cpp DXBMemDllMain.cpp DXMemoryManager.cpp fast_malloc.cpp
+
+MACRO NOKIA_CHANGES

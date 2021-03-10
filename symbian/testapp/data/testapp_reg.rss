@@ -1,0 +1,27 @@
+/*
+============================================================================
+ Name		: testapp.rss
+ Author	  : wuyulun
+ Copyright   : Your copyright notice
+ Description : This file contains the application registration resource.
+============================================================================
+*/
+
+#include "testapp.hrh"
+#include "testapp.rls"
+#include <appinfo.rh>
+#include <testapp_0xEA69F97C.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 _UID3
+
+RESOURCE APP_REGISTRATION_INFO
+	{
+	app_file="nbk_app";
+	localisable_resource_file =  qtn_loc_resource_file_1;
+	localisable_resource_id = R_LOCALISABLE_APP_INFO;
+
+	embeddability=KAppNotEmbeddable;
+	newfile=KAppDoesNotSupportNewFile;
+	}
+

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="res">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{8aac90e0-9e96-47dc-b388-28f8fc2bbbc5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="small.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="NbkShell.ico">
+      <Filter>res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NbkShell.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="NbkCore.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="NbkEvent.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerMgr.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWin.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="MWin.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="MWinMgr.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="LoaderMgr.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageMgr.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="NConn.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="NConnFile.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="NConnHttp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="NHttp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="MEdit.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>res</Filter>
+    </ClInclude>
+    <ClInclude Include="NConnCache.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="NConnHistory.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="MButton.h">
+      <Filter>app</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NbkShell.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="NbkCore.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="NbkEvent.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerMgr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="AppMain.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWin.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="MWin.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="MWinMgr.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="LoaderMgr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageMgr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="NConn.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="NConnFile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="NConnHttp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="NHttp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MEdit.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="NConnCache.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="NConnHistory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MButton.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NbkShell.rc">
+      <Filter>res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

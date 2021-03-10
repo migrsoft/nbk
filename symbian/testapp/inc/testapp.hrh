@@ -1,0 +1,38 @@
+/*
+ ============================================================================
+ Name		: testapp.hrh
+ Author	  : wuyulun
+ Copyright   : Your copyright notice
+ Description : This file contains declarations for constants of testapp.
+ The file can be included in C++ or resource file.
+ ============================================================================
+ */
+#ifndef __TESTAPP_HRH__
+#define __TESTAPP_HRH__
+
+#define _UID3 0xEA69F97C
+
+// testapp enumerate command codes
+enum TtestappIds
+{
+    EHome = 0x6001, // start value must not be 0
+    ENightScheme,
+    ETestAsync,
+    ETestSync,
+    ESwitchMode,
+    ESwitchModeUck,
+    ESwitchModeCute,
+    EEnableImage,
+    EEnableIncMode,
+    EStop,
+    ERefresh,
+    EForward,
+    EClearFsCache,
+    EMonkey,
+    ELayoutMode,
+    ERememberUri,
+    EHelp,
+    EAbout
+};
+
+#endif // __TESTAPP_HRH__

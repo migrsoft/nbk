@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NShell</string>
+    
+    <string name="go">GO</string>
+    <string name="quit">退出</string>
+    <string name="go_forward">前进</string>
+    <string name="alert_quit">是否退出？</string>
+    <string name="alert_yes">是</string>
+    <string name="alert_no">否</string>
+    <string name="night_mode">夜间</string>
+    
+    <string name="dlg_openurl_title">输入网址</string>
+    <string name="open">打开</string>
+    <string name="cancel">取消</string>
+
+</resources>

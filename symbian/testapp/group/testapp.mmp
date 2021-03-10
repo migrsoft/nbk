@@ -1,0 +1,85 @@
+/*
+============================================================================
+ Name		: testapp.mmp
+ Author	  : wuyulun
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for testapp.
+============================================================================
+*/
+
+
+TARGET			nbk_app.exe
+TARGETTYPE		exe
+UID		  0x100039CE 0xEA69F97C
+OPTION CW -frame on
+
+MACRO	USE_MM32
+#define USE_MM32
+
+//MACRO	__NBK_SELF_TESTING__
+
+SOURCEPATH		..\src
+SOURCE			testapp.cpp
+SOURCE			testappApplication.cpp
+SOURCE			testappAppView.cpp
+SOURCE			testappAppUi.cpp
+SOURCE			testappDocument.cpp
+
+SOURCEPATH		..\data
+
+START RESOURCE	testapp.rss
+HEADER
+TARGET nbk_app
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	testapp_reg.rss
+TARGET nbk_app_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+USERINCLUDE	   ..\inc
+USERINCLUDE    ..\help
+
+SYSTEMINCLUDE	/epoc32/include
+SYSTEMINCLUDE	/epoc32/include/libc
+//APP_LAYER_SYSTEMINCLUDE_SYMBIAN // for symbain ^3
+
+LIBRARY	euser.lib
+LIBRARY	apparc.lib
+LIBRARY	cone.lib
+LIBRARY	eikcore.lib
+LIBRARY	avkon.lib
+LIBRARY	commonengine.lib
+LIBRARY	efsrv.lib 
+LIBRARY	estor.lib
+LIBRARY	aknnotify.lib
+LIBRARY	hlplch.lib
+LIBRARY	fbscli.lib aknskins.lib
+LIBRARY	aknskinsrv.lib aknswallpaperutils.lib
+LIBRARY	commdb.lib uiklaf.lib inetprotutil.lib
+LIBRARY	eikcoctl.lib eikctl.lib bafl.lib fepbase.lib form.lib ws32.lib gdi.lib
+
+LIBRARY	nbk_core.lib
+
+#ifdef USE_MM32
+LIBRARY nbk_mem.lib
+#endif
+
+DEBUGLIBRARY	flogger.lib
+
+LANG SC
+
+VENDORID	  	  0
+SECUREID		  0xEA69F97C
+CAPABILITY LocalServices NetworkServices ReadUserData UserEnvironment WriteUserData
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+// End of File
+EPOCSTACKSIZE 0x10000
+
+EPOCHEAPSIZE 0x10000 0x1500000
+
+LIBRARY bitgdi.lib

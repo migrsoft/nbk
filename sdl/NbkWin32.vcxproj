@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5522F24E-BA66-4954-8C7D-F36DF1C2F0AE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NbkWin32</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>nbk</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\SDL-1.2.14\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDL-1.2.14\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>nbk</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\SDL\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\SDL-1.2.15\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\SDL-1.2.15\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\stdc\css\color.c" />
+    <ClCompile Include="..\stdc\css\cssSelector.c" />
+    <ClCompile Include="..\stdc\css\css_helper.c" />
+    <ClCompile Include="..\stdc\css\css_prop.c" />
+    <ClCompile Include="..\stdc\css\css_value.c" />
+    <ClCompile Include="..\stdc\dom\attr.c" />
+    <ClCompile Include="..\stdc\dom\char_ref.c" />
+    <ClCompile Include="..\stdc\dom\document.c" />
+    <ClCompile Include="..\stdc\dom\event.c" />
+    <ClCompile Include="..\stdc\dom\history.c" />
+    <ClCompile Include="..\stdc\dom\incParser.c" />
+    <ClCompile Include="..\stdc\dom\miParser.c" />
+    <ClCompile Include="..\stdc\dom\node.c" />
+    <ClCompile Include="..\stdc\dom\page.c" />
+    <ClCompile Include="..\stdc\dom\view.c" />
+    <ClCompile Include="..\stdc\dom\wbxmlDec.c" />
+    <ClCompile Include="..\stdc\dom\xml_atts.c" />
+    <ClCompile Include="..\stdc\dom\xml_helper.c" />
+    <ClCompile Include="..\stdc\dom\xml_tags.c" />
+    <ClCompile Include="..\stdc\dom\xml_tokenizer.c" />
+    <ClCompile Include="..\stdc\dom\xpath.c" />
+    <ClCompile Include="..\stdc\editor\editBox.c" />
+    <ClCompile Include="..\stdc\editor\formData.c" />
+    <ClCompile Include="..\stdc\editor\textEditor.c" />
+    <ClCompile Include="..\stdc\editor\textSel.c" />
+    <ClCompile Include="..\stdc\loader\crypto.c" />
+    <ClCompile Include="..\stdc\loader\idea.c" />
+    <ClCompile Include="..\stdc\loader\keygen.c" />
+    <ClCompile Include="..\stdc\loader\loader.c" />
+    <ClCompile Include="..\stdc\loader\ngzip.c" />
+    <ClCompile Include="..\stdc\loader\param.c" />
+    <ClCompile Include="..\stdc\loader\pkgParser.c" />
+    <ClCompile Include="..\stdc\loader\upCmd.c" />
+    <ClCompile Include="..\stdc\loader\url.c" />
+    <ClCompile Include="..\stdc\render\imagePlayer.c" />
+    <ClCompile Include="..\stdc\render\layoutStat.c" />
+    <ClCompile Include="..\stdc\render\renderA.c" />
+    <ClCompile Include="..\stdc\render\renderBlank.c" />
+    <ClCompile Include="..\stdc\render\renderBlock.c" />
+    <ClCompile Include="..\stdc\render\renderBr.c" />
+    <ClCompile Include="..\stdc\render\renderHr.c" />
+    <ClCompile Include="..\stdc\render\renderImage.c" />
+    <ClCompile Include="..\stdc\render\renderInline.c" />
+    <ClCompile Include="..\stdc\render\renderInlineBlock.c" />
+    <ClCompile Include="..\stdc\render\renderInput.c" />
+    <ClCompile Include="..\stdc\render\renderNode.c" />
+    <ClCompile Include="..\stdc\render\renderObject.c" />
+    <ClCompile Include="..\stdc\render\renderSelect.c" />
+    <ClCompile Include="..\stdc\render\renderTable.c" />
+    <ClCompile Include="..\stdc\render\renderTd.c" />
+    <ClCompile Include="..\stdc\render\renderText.c" />
+    <ClCompile Include="..\stdc\render\renderTextarea.c" />
+    <ClCompile Include="..\stdc\render\renderTextPiece.c" />
+    <ClCompile Include="..\stdc\render\renderTr.c" />
+    <ClCompile Include="..\stdc\tools\callback.c" />
+    <ClCompile Include="..\stdc\tools\dlist.c" />
+    <ClCompile Include="..\stdc\tools\dump.c" />
+    <ClCompile Include="..\stdc\tools\gdi.c" />
+    <ClCompile Include="..\stdc\tools\memAlloc.c" />
+    <ClCompile Include="..\stdc\tools\ptrArray.c" />
+    <ClCompile Include="..\stdc\tools\slist.c" />
+    <ClCompile Include="..\stdc\tools\str.c" />
+    <ClCompile Include="..\stdc\tools\strBuf.c" />
+    <ClCompile Include="..\stdc\tools\strDict.c" />
+    <ClCompile Include="..\stdc\tools\strList.c" />
+    <ClCompile Include="..\stdc\tools\strPool.c" />
+    <ClCompile Include="..\stdc\tools\timer.c" />
+    <ClCompile Include="..\stdc\tools\tree.c" />
+    <ClCompile Include="..\stdc\tools\unicode.c" />
+    <ClCompile Include="..\stdc\wbxml\wbxml_base64.c" />
+    <ClCompile Include="..\stdc\wbxml\wbxml_buffers.c" />
+    <ClCompile Include="..\stdc\wbxml\wbxml_charset.c" />
+    <ClCompile Include="..\stdc\wbxml\wbxml_elt.c" />
+    <ClCompile Include="..\stdc\wbxml\wbxml_mem.c" />
+    <ClCompile Include="..\stdc\wbxml\wbxml_parser.c" />
+    <ClCompile Include="..\stdc\wbxml\wbxml_tables.c" />
+    <ClCompile Include="cache.c" />
+    <ClCompile Include="connfile.c" />
+    <ClCompile Include="connhttp.c" />
+    <ClCompile Include="controls.c" />
+    <ClCompile Include="cookiemgr.c" />
+    <ClCompile Include="fileget.c" />
+    <ClCompile Include="http.c" />
+    <ClCompile Include="ini.c" />
+    <ClCompile Include="loginData.c" />
+    <ClCompile Include="md5.c" />
+    <ClCompile Include="nbkgdi.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="nbk.c" />
+    <ClCompile Include="nbkpic.c" />
+    <ClCompile Include="nbk_sdlExt.c" />
+    <ClCompile Include="picmgr.c" />
+    <ClCompile Include="probe.c" />
+    <ClCompile Include="resmgr.c" />
+    <ClCompile Include="runtime.c" />
+    <ClCompile Include="SDL_framerate.c" />
+    <ClCompile Include="SDL_gfxBlitFunc.c" />
+    <ClCompile Include="SDL_gfxPrimitives.c" />
+    <ClCompile Include="SDL_imageFilter.c" />
+    <ClCompile Include="SDL_rotozoom.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\stdc\css\color.h" />
+    <ClInclude Include="..\stdc\css\cssSelector.h" />
+    <ClInclude Include="..\stdc\css\css_helper.h" />
+    <ClInclude Include="..\stdc\css\css_prop.h" />
+    <ClInclude Include="..\stdc\css\css_val.h" />
+    <ClInclude Include="..\stdc\css\css_value.h" />
+    <ClInclude Include="..\stdc\dom\attr.h" />
+    <ClInclude Include="..\stdc\dom\char_ref.h" />
+    <ClInclude Include="..\stdc\dom\document.h" />
+    <ClInclude Include="..\stdc\dom\event.h" />
+    <ClInclude Include="..\stdc\dom\history.h" />
+    <ClInclude Include="..\stdc\dom\incParser.h" />
+    <ClInclude Include="..\stdc\dom\miParser.h" />
+    <ClInclude Include="..\stdc\dom\node.h" />
+    <ClInclude Include="..\stdc\dom\page.h" />
+    <ClInclude Include="..\stdc\dom\token.h" />
+    <ClInclude Include="..\stdc\dom\view.h" />
+    <ClInclude Include="..\stdc\dom\wbxmlDec.h" />
+    <ClInclude Include="..\stdc\dom\xml_atts.h" />
+    <ClInclude Include="..\stdc\dom\xml_helper.h" />
+    <ClInclude Include="..\stdc\dom\xml_tags.h" />
+    <ClInclude Include="..\stdc\dom\xml_tokenizer.h" />
+    <ClInclude Include="..\stdc\dom\xpath.h" />
+    <ClInclude Include="..\stdc\editor\editBox.h" />
+    <ClInclude Include="..\stdc\editor\formData.h" />
+    <ClInclude Include="..\stdc\editor\textEditor.h" />
+    <ClInclude Include="..\stdc\editor\textSel.h" />
+    <ClInclude Include="..\stdc\inc\config.h" />
+    <ClInclude Include="..\stdc\inc\nbk_callback.h" />
+    <ClInclude Include="..\stdc\inc\nbk_cbDef.h" />
+    <ClInclude Include="..\stdc\inc\nbk_ctlPainter.h" />
+    <ClInclude Include="..\stdc\inc\nbk_gdi.h" />
+    <ClInclude Include="..\stdc\inc\nbk_limit.h" />
+    <ClInclude Include="..\stdc\inc\nbk_public.h" />
+    <ClInclude Include="..\stdc\inc\nbk_settings.h" />
+    <ClInclude Include="..\stdc\inc\nbk_timer.h" />
+    <ClInclude Include="..\stdc\inc\nbk_version.h" />
+    <ClInclude Include="..\stdc\loader\crypto.h" />
+    <ClInclude Include="..\stdc\loader\crypto_def.h" />
+    <ClInclude Include="..\stdc\loader\idea.h" />
+    <ClInclude Include="..\stdc\loader\keygen.h" />
+    <ClInclude Include="..\stdc\loader\loader.h" />
+    <ClInclude Include="..\stdc\loader\ngzip.h" />
+    <ClInclude Include="..\stdc\loader\param.h" />
+    <ClInclude Include="..\stdc\loader\pkgParser.h" />
+    <ClInclude Include="..\stdc\loader\upCmd.h" />
+    <ClInclude Include="..\stdc\loader\url.h" />
+    <ClInclude Include="..\stdc\render\imagePlayer.h" />
+    <ClInclude Include="..\stdc\render\layoutStat.h" />
+    <ClInclude Include="..\stdc\render\renderA.h" />
+    <ClInclude Include="..\stdc\render\renderBlank.h" />
+    <ClInclude Include="..\stdc\render\renderBlock.h" />
+    <ClInclude Include="..\stdc\render\renderBr.h" />
+    <ClInclude Include="..\stdc\render\renderHr.h" />
+    <ClInclude Include="..\stdc\render\renderImage.h" />
+    <ClInclude Include="..\stdc\render\renderInline.h" />
+    <ClInclude Include="..\stdc\render\renderInlineBlock.h" />
+    <ClInclude Include="..\stdc\render\renderInput.h" />
+    <ClInclude Include="..\stdc\render\renderNode.h" />
+    <ClInclude Include="..\stdc\render\renderObject.h" />
+    <ClInclude Include="..\stdc\render\renderSelect.h" />
+    <ClInclude Include="..\stdc\render\renderTable.h" />
+    <ClInclude Include="..\stdc\render\renderTd.h" />
+    <ClInclude Include="..\stdc\render\renderText.h" />
+    <ClInclude Include="..\stdc\render\renderTextarea.h" />
+    <ClInclude Include="..\stdc\render\renderTextPiece.h" />
+    <ClInclude Include="..\stdc\render\renderTr.h" />
+    <ClInclude Include="..\stdc\tools\dlist.h" />
+    <ClInclude Include="..\stdc\tools\dump.h" />
+    <ClInclude Include="..\stdc\tools\memAlloc.h" />
+    <ClInclude Include="..\stdc\tools\ptrArray.h" />
+    <ClInclude Include="..\stdc\tools\slist.h" />
+    <ClInclude Include="..\stdc\tools\str.h" />
+    <ClInclude Include="..\stdc\tools\strBuf.h" />
+    <ClInclude Include="..\stdc\tools\strDict.h" />
+    <ClInclude Include="..\stdc\tools\strList.h" />
+    <ClInclude Include="..\stdc\tools\strPool.h" />
+    <ClInclude Include="..\stdc\tools\tree.h" />
+    <ClInclude Include="..\stdc\tools\unicode.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_base64.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_buffers.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_charset.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_config.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_conv.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_defines.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_elt.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_errors.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_handlers.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_internals.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_mem.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_parser.h" />
+    <ClInclude Include="..\stdc\wbxml\wbxml_tables.h" />
+    <ClInclude Include="cache.h" />
+    <ClInclude Include="connfile.h" />
+    <ClInclude Include="connhttp.h" />
+    <ClInclude Include="cookiemgr.h" />
+    <ClInclude Include="fileget.h" />
+    <ClInclude Include="http.h" />
+    <ClInclude Include="ini.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="loginData.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="md5_loc.h" />
+    <ClInclude Include="nbkgdi.h" />
+    <ClInclude Include="nbk.h" />
+    <ClInclude Include="nbkpic.h" />
+    <ClInclude Include="nbk_conf.h" />
+    <ClInclude Include="nbk_sdlExt.h" />
+    <ClInclude Include="picmgr.h" />
+    <ClInclude Include="probe.h" />
+    <ClInclude Include="resmgr.h" />
+    <ClInclude Include="runtime.h" />
+    <ClInclude Include="SDL_framerate.h" />
+    <ClInclude Include="SDL_gfxBlitFunc.h" />
+    <ClInclude Include="SDL_gfxPrimitives.h" />
+    <ClInclude Include="SDL_gfxPrimitives_font.h" />
+    <ClInclude Include="SDL_imageFilter.h" />
+    <ClInclude Include="SDL_rotozoom.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

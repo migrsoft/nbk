@@ -1,0 +1,237 @@
+/*
+============================================================================
+ Name		: testapp.rss
+ Author	  : wuyulun
+ Copyright   : Your copyright notice
+ Description : This file contains all the resources for the testapp.
+============================================================================
+*/
+//  RESOURCE IDENTIFIER
+NAME TEST	// 4 letter ID
+
+
+//  INCLUDES
+#include <eikon.rh>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <appinfo.rh>
+#include "testapp.hrh"
+#include "testapp.rls"
+
+//  RESOURCE DEFINITIONS
+// -----------------------------------------------------------------------------
+//
+//	Define the resource file signature
+//	This resource should be empty.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE
+	{
+	}
+
+// -----------------------------------------------------------------------------
+//
+//	Default Document Name
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_default_document_name
+	{
+	buf="TEST";
+	}
+
+// -----------------------------------------------------------------------------
+//
+//	Define default menu and CBA key.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE EIK_APP_INFO
+	{
+	menubar = r_menubar;
+	cba = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+	}
+
+
+// -----------------------------------------------------------------------------
+//
+//   r_menubar
+//   Main menubar
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_BAR r_menubar
+	{
+	titles =
+		{
+		MENU_TITLE { menu_pane = r_menu; }
+		};
+	}
+
+
+// -----------------------------------------------------------------------------
+//
+//   r_menu
+//   Menu for "Options"
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_menu
+	{
+	items =
+		{
+		// added the new Options menu command here
+		MENU_ITEM
+				{
+				command = EHome;
+				txt = qtn_home;
+				},
+        MENU_ITEM
+                {
+                command = ENightScheme;
+                txt = qtn_night_scheme;
+                },
+        MENU_ITEM
+                {
+                command = ERememberUri;
+                txt = qtn_remember_uri;
+                },
+        MENU_ITEM
+                {
+                command = EAknSoftkeyExit;
+                txt = qtn_exit;
+                },
+        MENU_ITEM
+                {
+                command = ESwitchMode;
+                txt = qtn_switch;
+                },
+        MENU_ITEM
+                {
+                command = ESwitchModeCute;
+                txt = qtn_switchCute;
+                },
+        MENU_ITEM
+                {
+                command = ESwitchModeUck;
+                txt = qtn_switchUck;
+                },
+        MENU_ITEM
+                {
+                command = EStop;
+                txt = qtn_stop;
+                },
+        MENU_ITEM
+                {
+                command = ERefresh;
+                txt = qtn_refresh;
+                },
+        MENU_ITEM
+                {
+                command = EForward;
+                txt = qtn_forward;
+                },
+        MENU_ITEM
+                {
+                command = EEnableImage;
+                txt = qtn_set_image;
+                },
+        MENU_ITEM
+                {
+                command = EEnableIncMode;
+                txt = qtn_set_inc;
+                },
+        MENU_ITEM
+                {
+                command = EClearFsCache;
+                txt = qtn_clear_fscache;
+                },
+		MENU_ITEM
+				{
+				command = ETestAsync;
+				txt = qtn_test_async;
+				},
+        MENU_ITEM
+                {
+                command = ETestSync;
+                txt = qtn_test_sync;
+                },
+        MENU_ITEM
+                {
+                command = ELayoutMode;
+                txt = qtn_layout_mode;
+                },
+        MENU_ITEM
+                {
+                command = EMonkey;
+                txt = qtn_monkey;
+                }               
+		};
+	}
+
+// -----------------------------------------------------------------------------
+//
+// About dialog resource.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_about_query_dialog
+	{
+	flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+	buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+	items=
+		{
+		DLG_LINE 
+			{
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			itemflags = EEikDlgItemNonFocusing;
+			control = AVKON_HEADING
+				{
+				};
+			},
+		DLG_LINE
+			{
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+				{
+				};
+			}
+		};
+	}
+
+
+// -----------------------------------------------------------------------------
+//
+// Resources for messages.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF32 r_caption_string { buf=qtn_caption_string; }
+RESOURCE TBUF32 r_about_dialog_title { buf=qtn_about_dialog_title; }
+RESOURCE TBUF r_about_dialog_text { buf=qtn_about_dialog_text; }
+RESOURCE TBUF r_command1_text { buf=qtn_command1_text; }
+
+
+// ---------------------------------------------------------------------------- 
+//
+// r_localisable_app_info
+//
+// ---------------------------------------------------------------------------- 
+//
+RESOURCE LOCALISABLE_APP_INFO r_localisable_app_info
+	{
+	short_caption = qtn_caption_string;
+	caption_and_icon = 
+	CAPTION_AND_ICON_INFO
+		{
+		caption = qtn_caption_string;
+
+		number_of_icons = 1;
+		icon_file = "\\resource\\apps\\nbk_app.mif";
+		};
+	}
+
+// End of File

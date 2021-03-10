@@ -1,0 +1,21 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : wuyulun
+ Copyright   : Your copyright notice
+ Description : This file provides the information required for building the
+				whole of a testapp.
+============================================================================
+*/
+
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+PRJ_MMPFILES
+
+
+
+gnumakefile Icons_scalable_dc.mk
+testapp.mmp
+
